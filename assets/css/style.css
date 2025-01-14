@@ -1113,6 +1113,7 @@ Style Header 1
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	margin-left: -128px;
 }
 
 .header-1 .header-bottom .header-main .header-logo {
@@ -1123,7 +1124,7 @@ Style Header 1
 }
 
 .header-1 .header-bottom .header-main .header-logo img {
-	height: 100%;
+	height: 90%;
 	width: auto;
 	max-width: 100%;
 	-o-object-fit: cover;
