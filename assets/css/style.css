@@ -3230,7 +3230,7 @@ Style Game 1
 
 .game-1 .game-item {
 	border-radius: 10px;
-	padding: 35px;
+	padding: 60px;
 	-webkit-box-shadow: 0 6px 34px rgba(215, 216, 222, 0.41);
 	box-shadow: 0 6px 34px rgba(215, 216, 222, 0.41);
 	height: 100%;
