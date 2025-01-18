@@ -74,14 +74,14 @@
 					</div>
 					<div class="header-top_contact">
 						<div class="header-top_contact__item">
-							Phone:
 							<a href="">
+								<i class="fas fa-phone-alt"></i>
 								098.111.1111
 							</a>
 						</div>
 						<div class="header-top_contact__item">
-							Email:
 							<a href="">
+								<i class="fas fa-envelope"></i>
 								support@netpay.com
 							</a>
 						</div>
@@ -94,7 +94,7 @@
 		<div class="container">
 			<div class="header-main">
 				<a href="" class="header-logo">
-					<img src="./assets/images/logo.png" alt="">
+					<img src="./assets/images/netpay.png" alt="">
 				</a>
 				<div class="header-navigation" id="headerNavigation">
 					<ul>
@@ -258,12 +258,12 @@
 						<!-- Desktop -->
 						<div class="header-user_desktop">
 							<div class="d-flex align-items-center gap-10px">
-								<a href="" class="button-theme_1 button-theme_primary__outline rounded-1">
+								<a href="dang-nhap.html" class="button-theme_1 button-theme_primary rounded-1">
 									<span>
 										Đăng nhập
 									</span>
 								</a>
-								<a href="" class="button-theme_1 button-theme_primary rounded-1">
+								<a href="dang-ky.html" class="button-theme_1 button-theme_primary__outline rounded-1">
 									<span>
 										Đăng ký
 									</span>
@@ -374,87 +374,118 @@
 	</div>
 	<div class="header-overlay" id="headerOverlay"></div>
 </header>
-<div class="main">
-	<div class="user-form-1 background-light section-gap">
+<div id="main" class="main">
+	<div class="section-gap section-login">
 		<div class="container">
-			<div class="row g-md-4 g-3 justify-content-center">
-				<div class="col-md-10 col-lg-8 col-xl-6">
-					<div class="user-form_box">
-						<div class="user-form_inner">
-							<div class="user-form_heading">
-								<div class="user-form_heading__title">
-									Đăng ký tài khoản
+			<div class="row g-4 justify-content-center">
+				<div class="col-12">
+					<div class="login-wrapper">
+						<div class="row g-0 flex-lg-row flex-column-reverse">
+							<div class="col-lg-7 col-xl-6">
+								<div class="login-inner">
+									<div class="section-heading mb-4 text-lg-start">
+										<div class="heading-title mb-0">
+											Đăng ký tài khoản
+										</div>
+									</div>
+									<form action="" class="login-form">
+										<div class="row g-4">
+											<div class="col-md-12">
+												<label for="" class=" mb-2 fz-15">
+													<i class="fal fa-user-alt"></i> Tên đăng nhập <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item">
+													<input type="text" class="form-control ps-3"
+														   placeholder="Nhập tên đăng nhập">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="" class=" mb-2 fz-15">
+													<i class="fal fa-lock-alt"></i> Mật khẩu đăng nhập <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item login-form_icon">
+													<input type="password" class="form-control ps-3"
+														   id="password"
+														   placeholder="Mật khẩu đăng nhập">
+													<button type="button"
+															data-id="password"
+															class="login-form_view link-default buttonViewPassword">
+														<i class="fal fa-eye"></i>
+													</button>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="" class=" mb-2 fz-15">
+													<i class="fal fa-lock-alt"></i> Nhập lại mật khẩu <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item login-form_icon">
+													<input type="password" class="form-control ps-3"
+														   id="password-re"
+														   placeholder="Nhập lại mật khẩu">
+													<button type="button"
+															data-id="password-re"
+															class="login-form_view link-default buttonViewPassword">
+														<i class="fal fa-eye"></i>
+													</button>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="" class=" mb-2 fz-15">
+													<i class="fal fa-id-card"></i> Họ và tên <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item">
+													<input type="text" class="form-control ps-3"
+														   placeholder="Nhập họ và tên">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="" class=" mb-2 fz-15">
+													<i class="fal fa-phone-alt"></i> SĐT hoặc Email <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item">
+													<input type="text" class="form-control ps-3"
+														   placeholder="Nhập sđt hoặc email">
+												</div>
+											</div>
+                                            <div class="col-12 mt-5 text-center">
+                                                <button type="submit" class="button-theme_1 button-theme_primary button-theme_large rounded-2 w-100">
+													<span>
+														ĐĂNG KÝ <i class="fas fa-sign-in-alt ms-1"></i>
+													</span>
+                                                </button>
+                                            </div>
+											<div class="col-12 text-center">
+												<div class="fz-14">
+													Bạn đã có tài khoản? <a href="dang-nhap.html">Đăng nhập</a>
+												</div>
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
-							<form action="" id="formValidation" novalidate>
-								<div class="user-form_item">
-									<div class="form-floating">
-										<input type="email" class="form-control" id="exampleEmail"
-										       required
-										       placeholder="Email">
-										<label for="exampleEmail">Email</label>
-										<div class="invalid-feedback">
-											Please enter a valid email address
+							<div class="col-lg-5 col-xl-6">
+								<div class="login-image" style="background-image: url('./assets/images/bg-login.png')">
+									<img src="./assets/images/img-login.png" class="img-fluid" alt="">
+									<div class="login-protected">
+										<div class="protected-icon">
+											<img src="./assets/images/protected.png" class="img-fluid w-100" alt="">
+										</div>
+										<div class="protected-content">
+											<div class="protected-title">
+												Bảo mật tài khoản của bạn
+											</div>
+											<div class="protected-text">
+												Tất cả thông tin của bạn sẽ được giữ an toàn và bảo mật
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="user-form_item">
-									<div class="form-floating">
-										<button type="button"
-										        class="link-default form-button buttonViewPassword"
-										        data-id="examplePassword">
-											<i class="fas fa-eye"></i>
-										</button>
-										<input type="password" class="form-control" id="examplePassword"
-										       required
-										       placeholder="Password">
-										<label for="examplePassword">Password</label>
-										<div class="invalid-feedback">
-											At least 8 characters, including 1 number and 1 letter and following
-											special
-											characters, such as (!"#$%&'*+,-./:;<=>?@[\]^_{|}~)
-										</div>
-									</div>
-								</div>
-								<div class="user-form_item mt-3">
-									<div class="form-text">
-										Use 8 or more characters with at least 1 number and 1 letter
-									</div>
-								</div>
-								<div class="user-form_item text-center">
-									<button type="submit"
-									        class="button-theme_1 button-theme_primary">
-										<span>
-											Đăng ký tài khoản
-										</span>
-									</button>
-								</div>
-								<div class="user-form_item mt-3">
-									<div class="form-text text-center">
-										Already have an account?
-										<a href="">Sign In</a>
-									</div>
-								</div>
-								<div class="user-form_divider">
-									<span>Or</span>
-								</div>
-								<div class="user-form_item user-form_buttons">
-									<button type="submit" class="user-form_buttons__facebook">
-										<img src="./assets/images/facebook-login.png" class="img-fluid" alt="">
-										Sign up with Facebook
-									</button>
-									<button type="submit" class="user-form_buttons__google">
-										<img src="./assets/images/google-login.png" class="img-fluid" alt="">
-										Sign up with Google
-									</button>
-								</div>
-								<div class="user-form_item">
-									<div class="form-text text-center">
-										By signing up, you agree to our <a href="">Terms & Conditions</a>
-										and <a href="">Privacy Policy</a>
-									</div>
-								</div>
-							</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -468,14 +499,14 @@
 			<div class="footer-gap">
 				<div class="footer-logo">
 					<a href="">
-						<img src="./assets/images/logo-white.png" class="img-fluid" alt="">
+						<img src="./assets/images/netpay-white.png" class="img-fluid" alt="">
 					</a>
 				</div>
 				<div class="row g-4">
 					<div class="col-lg-5">
 						<div class="footer-item">
 							<div class="footer-title">
-								CÔNG TY TNHH PHẦN MỀM TRỰC TUYẾN NENCER
+								CÔNG TY TNHH THƯƠNG MẠI NETPAY
 							</div>
 							<div class="footer-contact">
 								<a href="" class="footer-contact_item">
@@ -488,13 +519,13 @@
 								<a href="" class="footer-contact_item">
 									<i class="fas fa-phone-rotary "></i>
 									<span>
-										0969110811
+										098.111.1111
 									</span>
 								</a>
 								<a href="" class="footer-contact_item">
 									<i class="fas fa-envelope"></i>
 									<span>
-										support@nencer.com
+										support@netpay.com
 									</span>
 								</a>
 								<a href="" class="footer-contact_item">
@@ -534,31 +565,31 @@
 							<div class="col-6 col-lg-4">
 								<div class="footer-item">
 									<div class="footer-title">
-										PHẦN MỀM
+										DỊCH VỤ THẺ
 									</div>
 									<ul class="footer-link">
 										<li class="footer-link_item">
 											<a href=""
 											   class="footer-link_item__link">
-												Quản lý trường học
+												Mua mã thẻ
 											</a>
 										</li>
 										<li class="footer-link_item">
 											<a href=""
 											   class="footer-link_item__link">
-												Quản lý bệnh viện
+												Nạp tiền điện thoại
 											</a>
 										</li>
 										<li class="footer-link_item">
 											<a href=""
 											   class="footer-link_item__link">
-												Quản lý khách sạn
+												Nạp tiền game
 											</a>
 										</li>
 										<li class="footer-link_item">
 											<a href=""
 											   class="footer-link_item__link">
-												Quản lý sân Golf
+												Nạp Carot Teamobi
 											</a>
 										</li>
 									</ul>
@@ -567,49 +598,25 @@
 							<div class="col-6 col-lg-4">
 								<div class="footer-item">
 									<div class="footer-title">
-										THIẾT KẾ WEB
+										THÔNG TIN
 									</div>
 									<ul class="footer-link">
 										<li class="footer-link_item">
 											<a href=""
 											   class="footer-link_item__link">
-												Bán thẻ cào
+												Tin tức
 											</a>
 										</li>
 										<li class="footer-link_item">
 											<a href=""
 											   class="footer-link_item__link">
-												Đặt chỗ du lịch
+												Kết nối API
 											</a>
 										</li>
 										<li class="footer-link_item">
 											<a href=""
 											   class="footer-link_item__link">
-												Booking Golf
-											</a>
-										</li>
-										<li class="footer-link_item">
-											<a href=""
-											   class="footer-link_item__link">
-												Doanh nghiệp
-											</a>
-										</li>
-										<li class="footer-link_item">
-											<a href=""
-											   class="footer-link_item__link">
-												Bán hàng trực tuyến
-											</a>
-										</li>
-										<li class="footer-link_item">
-											<a href=""
-											   class="footer-link_item__link">
-												Bán file tài liệu
-											</a>
-										</li>
-										<li class="footer-link_item">
-											<a href=""
-											   class="footer-link_item__link">
-												Học trực tuyến
+												Bảo mật
 											</a>
 										</li>
 									</ul>
@@ -618,32 +625,25 @@
 							<div class="col-6 col-lg-4">
 								<div class="footer-item">
 									<div class="footer-title">
-										GIẢI PHÁP
+										LIÊN HỆ
 									</div>
 									<ul class="footer-link">
 										<li class="footer-link_item">
-											<a href="#" class="footer-link_item__link">
-												Y tế điện tử
+											<a href=""
+											   class="footer-link_item__link">
+												Thời gian làm việc: 08h-22h
 											</a>
 										</li>
 										<li class="footer-link_item">
-											<a href="#" class="footer-link_item__link">
-												Số hóa hồ sơ
+											<a href=""
+											   class="footer-link_item__link">
+												Fanpage: Netpay.vn
 											</a>
 										</li>
 										<li class="footer-link_item">
-											<a href="#" class="footer-link_item__link">
-												Bảo mật hệ thống
-											</a>
-										</li>
-										<li class="footer-link_item">
-											<a href="#" class="footer-link_item__link">
-												Bản quyền số DRM
-											</a>
-										</li>
-										<li class="footer-link_item">
-											<a href="#" class="footer-link_item__link">
-												Hệ thống mạng
+											<a href=""
+											   class="footer-link_item__link">
+												Checkscam.com - Check uy tín
 											</a>
 										</li>
 									</ul>
