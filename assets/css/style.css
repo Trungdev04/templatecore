@@ -9673,6 +9673,11 @@ Service Hot
     transition: background-color 0.3s ease;
 }
 
+.table-filter .btn-pdf i {
+    color: white;
+    margin-right: 3px;
+}
+
 .table-filter .btn-pdf:hover {
     background-color: #c82333;
     color: white;
@@ -9684,6 +9689,11 @@ Service Hot
     border-radius: 5px;
     border: none;
     transition: background-color 0.3s ease;
+}
+
+.table-filter .btn-excel i {
+    color: white;
+    margin-right: 3px;
 }
 
 .table-filter .btn-excel:hover {
