@@ -1133,6 +1133,7 @@ Style Header 1
     -o-transition: var(--transition-default, 0.3s all ease-in-out);
     transition: var(--transition-default, 0.3s all ease-in-out);
 }
+
 @media screen and (max-width: 768px) {
     /*.header-1 .header-bottom .header-main {*/
     /*    display: flex;*/
@@ -1140,12 +1141,10 @@ Style Header 1
     /*    align-items: center;*/
     /*    padding: 0 16px;*/
     /*}*/
-
     /*.header-1 .header-bottom .header-main .header-logo {*/
     /*    flex-shrink: 0;*/
     /*    margin-right: 0;*/
     /*}*/
-
     .header-1 .header-bottom .header-main .header-logo img {
         max-width: 60%;
         height: auto;
@@ -3250,19 +3249,20 @@ Style Game 1
 .game-1 .game-item {
     border-radius: 10px;
     padding: 60px;
-    -webkit-box-shadow: 0 6px 34px rgba(215, 216, 222, 0.41);
-    box-shadow: 0 6px 34px rgba(215, 216, 222, 0.41);
-    height: 100%;
+    display: flex;
     -webkit-transition: var(--transition-default, 0.3s all ease-in-out);
     -o-transition: var(--transition-default, 0.3s all ease-in-out);
     transition: var(--transition-default, 0.3s all ease-in-out);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.game-1 .game-item .game-item_button {
+    margin-top: 15px;
+    text-align: center;
 }
 
 .game-1 .game-item .game-item_icon {
@@ -3282,11 +3282,6 @@ Style Game 1
     transition: var(--transition-default, 0.3s all ease-in-out);
     text-align: center;
     margin-bottom: 15px;
-}
-
-.game-1 .game-item .game-item_button {
-    margin-top: auto;
-    text-align: center;
 }
 
 .game-1 .game-item:hover {
@@ -9408,6 +9403,7 @@ Service Hot
 .card-cart .card-body .align-items-center {
     align-items: center !important;
 }
+
 .card-cart .card-body .cart-name {
     font-size: 1.075em;
     font-weight: 700;
@@ -9416,6 +9412,7 @@ Service Hot
 .card-cart .card-body .cart-percent {
     font-size: 90%;
 }
+
 .justify-content-end {
     justify-content: flex-end !important;
 }
@@ -9568,7 +9565,6 @@ Service Hot
 .card-cart .card-body .section-form.section-form_card .section-form_inner .section-form_wrapper {
     gap: 15px;
 }
-
 
 
 .section-form .section-form_inner .section-form_wrapper .section-form_item .section-form_item__text {
@@ -9776,6 +9772,7 @@ Service Hot
     text-align: left;
     font-weight: bold;
 }
+
 .section-tables td {
     text-align: left;
 }
