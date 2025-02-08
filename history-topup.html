@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Build</title>
+    <meta name="description" content="Template Build">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Build">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Build">
+    <meta property="og:image" content="./assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        :root {
+            --primary-color: #0a68ac;
+            --primary-hover: #0b3375;
+            --primary-rgb: 10, 104, 172;
+            --secondary-color: #ED3439;
+            --secondary-hover: #c62a2e;
+            --secondary-rgb: 237, 52, 57;
+            --font-theme: "Lexend", Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-1" id="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top_wrap">
+                <div class="d-flex align-items-center w-100">
+                    <div class="header-top_toolbar">
+                        <div class="header-language">
+                            <ul>
+                                <li>
+                                    <a href="" class="active">
+                                        <img src="./assets/images/language/vn.svg" width="20"
+                                             height="20">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/language/en.svg" width="20"
+                                             height="20">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/language/cn.png" width="20"
+                                             height="20">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-top_contact">
+                        <div class="header-top_contact__item">
+                            <a href="">
+                                <i class="fas fa-phone-alt"></i>
+                                098.111.1111
+                            </a>
+                        </div>
+                        <div class="header-top_contact__item">
+                            <a href="">
+                                <i class="fas fa-envelope"></i>
+                                support@netpay.vn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header-main">
+                <a href="index.html" class="header-logo">
+                    <img src="./assets/images/netpay.png" alt="">
+                </a>
+                <div class="header-navigation" id="headerNavigation">
+                    <ul>
+                        <li>
+                            <a href="mua-the.html">
+                                MUA THẺ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topup-game.html">
+                                NẠP GAME
+                                <i class="far fa-angle-down"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Nạp Sò & Các Game Garena
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Free Fire
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Các Game Zing
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Vcoin (VTC) & GATE
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="topup-sms.html">
+                                NẠP ĐIỆN THOẠI
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                NẠP TOPUP CAROT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                NẠP TIỀN/RÚT TIỀN
+                                <i class="far fa-angle-down"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Nạp tiền
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Rút tiền
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Chuyển tiền
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Lịch sử
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                DỊCH VỤ VIP
+                                <i class="far fa-angle-down"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Mua nick game
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Đký làm CTV bán nick
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Lịch sử mua nick
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+										<span class="navigation-item_content">
+											<span class="navigation-item_title">
+												Lịch sử bán nick
+											</span>
+										</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="header-navigation_footer">
+                        <a href="" class="button-theme_1 button-theme_primary__outline rounded-1">
+							<span>
+								<i class="fas fa-phone-alt"></i>
+								098.111.1111
+							</span>
+                        </a>
+                        <a href="" class="button-theme_1 button-theme_primary__outline rounded-1">
+							<span>
+								<i class="fas fa-envelope"></i>
+								support@netpay.vn
+							</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-toolbar">
+                    <div class="header-user">
+                        <!-- Desktop -->
+                        <div class="header-user_desktop">
+                            <div class="d-flex align-items-center gap-10px">
+                                <a href="dang-nhap.html" class="button-theme_1 button-theme_primary__outline rounded-1">
+									<span>
+										Đăng nhập
+									</span>
+                                </a>
+                                <a href="dang-ky.html" class="button-theme_1 button-theme_primary rounded-1">
+									<span>
+										Đăng ký
+									</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-user_mobile">
+                            <button type="button" class="header-user_btn">
+                                <i class="far fa-user"></i>
+                                <span class="header-user_btn__icon">
+									Tài khoản
+								</span>
+                            </button>
+                            <ul>
+                                <li>
+                                    <a href="">Thông tin tài khoản</a>
+                                </li>
+                                <li>
+                                    <a href="">Đổi mật khẩu</a>
+                                </li>
+                                <li>
+                                    <a href="">Lịch sử nạp tiền</a>
+                                </li>
+                                <li>
+                                    <a href="">Đăng ký</a>
+                                </li>
+                                <li>
+                                    <a href="">Đăng nhập</a>
+                                </li>
+                                <li>
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Mobile -->
+
+                        <!--
+                        Đã đăng nhập
+
+                        <button type="button" class="header-user_btn">
+                            <i class="far fa-user"></i>
+                            <span class="header-user_btn__icon">
+                                Tài khoản
+                            </span>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="">Thông tin tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="">Đổi mật khẩu</a>
+                            </li>
+                            <li>
+                                <a href="">Lịch sử nạp tiền</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng ký</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                        -->
+                    </div>
+                    <div class="header-language">
+                        <button type="button" class="header-language_btn">
+                            <img src="./assets/images/language/vn.svg" width="20"
+                                 height="20">
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="" class="active">
+                                    <img src="./assets/images/language/vn.svg" width="20"
+                                         height="20">
+                                    Tiếng Việt
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/language/en.svg" width="20"
+                                         height="20">
+                                    English
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/language/cn.png" width="20"
+                                         height="20">
+                                    中文
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-hamburger">
+						<span class="hamburger-button" id="hamburgerButton">
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-overlay" id="headerOverlay"></div>
+</header>
+
+<div id="main" class="main">
+    <div class="user-form-1">
+        <div class="user-form_wrapper">
+            <div class="user-form_item">
+                <div class="user-form_filter">
+                    <div class="user-form_filter__header">
+                        <div class="user-form_heading text-start text-left">
+                            <div class="user-form_heading__sub">
+                                LỊCH SỬ NẠP TOPUP
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-form_filter__body">
+                        <div class="row g-2">
+                            <div class="col-lg col-md-3 col-6">
+                                <input class="form-control" value="" name="" placeholder="Mã đơn">
+                            </div>
+                            <div class="col-lg col-md-3 col-6">
+                                <input class="form-control" value="" name=""
+                                       placeholder="Tài khoản nhận">
+                            </div>
+                            <div class="col-lg col-md-3 col-6">
+                                <select name="" class="form-select">
+                                    <option value="" selected="selected">Mã dịch vụ</option>
+                                    <option value="">Nạp Viettel trả sau</option>
+                                    <option value="">Nạp Viettel trả trước</option>
+                                    <option value="">Nạp Vinaphone trả trước</option>
+                                    <option value="">Nạp Vinaphone trả sau</option>
+                                    <option value="">Nạp Mobifone trả sau</option>
+                                    <option value="">Nạp Mobifone trả trước</option>
+                                    <option value="">Nạp Vietnamobile trả trước</option>
+                                    <option value="">Avatar 3</option>
+                                    <option value="">Avatar Musik</option>
+                                    <option value="">Ninja</option>
+                                </select>
+                            </div>
+                            <div class="col-lg col-md-3 col-6">
+                                <select name="" class="form-select">
+                                    <option value="" selected="selected">Trạng thái</option>
+                                    <option value="">Thành công</option>
+                                    <option value="">Chờ xử lý</option>
+                                    <option value="">Hủy bỏ</option>
+                                </select>
+                            </div>
+                            <div class="col-lg col-md-3 col-6">
+                                <div class="form-group initDateRangePicker">
+                                    <div class="form-group_icon form-group_icon__append">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <input class="form-control" value="07-10-2024" name="" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg col-md-3 col-6">
+                                <div class="form-group initDateRangePicker">
+                                    <div class="form-group_icon form-group_icon__append">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <input class="form-control" value="07-10-2024" name="" type="text">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md">
+                                <div class="form-group">
+                                    <button class="button-theme_1 button-theme_custom rounded-1 button-theme_primary"
+                                            type="submit">
+														<span>
+															<i class="fal fa-search"></i>
+															Lọc
+														</span>
+                                    </button>
+                                    <button class="button-theme_1 button-theme_custom rounded-1 button-theme_success"
+                                            type="submit">
+														<span>
+															<i class="fas fa-file-excel"></i>
+														</span>
+                                    </button>
+                                    <a href=""
+                                       class="button-theme_1 button-theme_custom rounded-1 button-theme_danger">
+														<span>
+															<i class="fas fa-trash-alt"></i>
+															Bỏ lọc
+														</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-1">
+                    <div class="table-responsive scrollbar scrollbar-x">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>
+                                    Mã đơn
+                                </th>
+                                <th>
+                                    Mã dịch vụ
+                                </th>
+                                <th>
+                                    Tài khoản nhận
+                                </th>
+                                <th>
+                                    Yêu cầu
+                                </th>
+                                <th class="text-center">
+                                    Đơn hàng
+                                </th>
+                                <th>
+                                    Số tiền
+                                </th>
+                                <th>
+                                    Ngày tạo
+                                </th>
+                                <th>
+                                    Thao tác
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="text-nowrap">
+                                        <strong>R67A70C92E5897</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        vietteltt
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        0986943798
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        20,000 đ
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge badge-success">Hoàn thành</span>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        18,800 đ
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        2024-10-06 11:37:27
+                                    </div>
+                                </td>
+                                <td>
+                                    Nạp tiền vào tài khoản Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Aut, fugit.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-nowrap">
+                                        <strong>R67A70B6AD27E8</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        vinatt
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        0951236047
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        200,000 đ
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge badge-success">Hoàn thành</span>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        184,000
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        2024-10-06 11:37:27
+                                    </div>
+                                </td>
+                                <td>
+                                    Nạp tiền vào tài khoản Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Aut, fugit.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-nowrap">
+                                        <strong>R67A70B137684E</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        so
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        hz.998bi
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        500,000 đ
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge badge-success">Hoàn thành</span>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        495,090 đ
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        2024-10-06 11:37:27
+                                    </div>
+                                </td>
+                                <td>
+                                    Nạp tiền vào tài khoản Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Aut, fugit.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-nowrap">
+                                        <strong>R67A5F6BE35D0B</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        lmht
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        daiktop1
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        300,000
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge badge-success">Hoàn thành</span>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        285,000 đ
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        2024-10-06 11:37:27
+                                    </div>
+                                </td>
+                                <td>
+                                    Nạp tiền vào tài khoản Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Aut, fugit.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-nowrap">
+                                        <strong>R67A5C2B77EB1A</strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        freefire
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        95190016
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        200,000
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge badge-success">Hoàn thành</span>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        184,000
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap">
+                                        2024-10-06 11:37:27
+                                    </div>
+                                </td>
+                                <td>
+                                    Nạp tiền vào tài khoản Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Aut, fugit.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-1">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-gap">
+                <div class="footer-logo">
+                    <a href="">
+                        <img src="./assets/images/netpay-white.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="footer-item">
+                            <div class="footer-title">
+                                CÔNG TY TNHH THƯƠNG MẠI NETPAY
+                            </div>
+                            <div class="footer-contact">
+                                <a href="" class="footer-contact_item">
+                                    <i class="fas fa-map-marker-alt "></i>
+                                    <span>
+										Tầng 7, Số 150 Trần Vỹ, P. Mai Dịch, Q. Cầu
+										Giấy, Tp. Hà Nội
+									</span>
+                                </a>
+                                <a href="" class="footer-contact_item">
+                                    <i class="fas fa-phone-rotary "></i>
+                                    <span>
+										098.111.1111
+									</span>
+                                </a>
+                                <a href="" class="footer-contact_item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>
+										support@netpay.vn
+									</span>
+                                </a>
+                                <a href="" class="footer-contact_item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>
+										GPKD: 0110383429. Do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp
+										(lần đầu) ngày 12/06/2023
+									</span>
+                                </a>
+                            </div>
+                            <ul class="footer-social">
+                                <li class="footer-social_item">
+                                    <a href="" class="footer-social_item__link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social_item">
+                                    <a href="" class="footer-social_item__link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social_item">
+                                    <a href="" class="footer-social_item__link">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social_item">
+                                    <a href="" class="footer-social_item__link">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-6 col-lg-4">
+                                <div class="footer-item">
+                                    <div class="footer-title">
+                                        DỊCH VỤ THẺ
+                                    </div>
+                                    <ul class="footer-link">
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Mua mã thẻ
+                                            </a>
+                                        </li>
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Nạp tiền điện thoại
+                                            </a>
+                                        </li>
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Nạp tiền game
+                                            </a>
+                                        </li>
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Nạp Carot Teamobi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="footer-item">
+                                    <div class="footer-title">
+                                        THÔNG TIN
+                                    </div>
+                                    <ul class="footer-link">
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Kết nối API
+                                            </a>
+                                        </li>
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Bảo mật
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="footer-item">
+                                    <div class="footer-title">
+                                        LIÊN HỆ
+                                    </div>
+                                    <ul class="footer-link">
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Thời gian làm việc: 08h-22h
+                                            </a>
+                                        </li>
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Fanpage: Netpay.vn
+                                            </a>
+                                        </li>
+                                        <li class="footer-link_item">
+                                            <a href=""
+                                               class="footer-link_item__link">
+                                                Checkscam.com - Check uy tín
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row flex-md-row flex-column-reverse g-3">
+                <div class="col-lg-8 col-md-6">
+                    <div class="footer-copyright">
+                        ©2010 - 2025 Software by Nencer LLC.,
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logos">
+                        <a href="">
+                            <img src="./assets/images/icon/visa-logo.webp" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/images/icon/master-logo.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/images/icon/american-express-logo.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/images/icon/JCB-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0"
+        nonce="eZ84RqM9"></script>
+<script src="https://sp.zalo.me/plugins/sdk.js"></script>
+</body>
+</html>
