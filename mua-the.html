@@ -758,58 +758,89 @@
             </div>
             <div class="row">
                 <div class="col-md-12 mt-5">
-                    <div class="section-heading">
-                        <div class="heading-title">
-                            LỊCH SỬ MUA THẺ
+                    <div class="user-form_filter">
+                        <div class="user-form_filter__header">
+                            <div class="user-form_heading text-start text-left">
+                                <div class="user-form_heading__sub">
+                                    LỊCH SỬ NẠP TOPUP
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="table-filter form-inner mb-2">
-                        <form action="">
-                            <div class="row row-30">
+                        <div class="user-form_filter__body">
+                            <div class="row g-2">
                                 <div class="col-lg col-md-3 col-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Hóa đơn">
+                                    <input class="form-control" value="" name="" placeholder="Đơn hàng">
+                                </div>
+<!--                                <div class="col-lg col-md-3 col-6">-->
+<!--                                    <input class="form-control" value="" name=""-->
+<!--                                           placeholder="Tài khoản nhận">-->
+<!--                                </div>-->
+<!--                                <div class="col-lg col-md-3 col-6">-->
+<!--                                    <select name="" class="form-select">-->
+<!--                                        <option value="" selected="selected">Mã dịch vụ</option>-->
+<!--                                        <option value="">Nạp Viettel trả sau</option>-->
+<!--                                        <option value="">Nạp Viettel trả trước</option>-->
+<!--                                        <option value="">Nạp Vinaphone trả trước</option>-->
+<!--                                        <option value="">Nạp Vinaphone trả sau</option>-->
+<!--                                        <option value="">Nạp Mobifone trả sau</option>-->
+<!--                                        <option value="">Nạp Mobifone trả trước</option>-->
+<!--                                        <option value="">Nạp Vietnamobile trả trước</option>-->
+<!--                                        <option value="">Avatar 3</option>-->
+<!--                                        <option value="">Avatar Musik</option>-->
+<!--                                        <option value="">Ninja</option>-->
+<!--                                    </select>-->
+<!--                                </div>-->
+                                <div class="col-lg col-md-3 col-6">
+                                    <select name="" class="form-select">
+                                        <option value="" selected="selected">Trạng thái</option>
+                                        <option value="">Thành công</option>
+                                        <option value="">Chờ xử lý</option>
+                                        <option value="">Hủy bỏ</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg col-md-3 col-6">
+                                    <div class="form-group initDateRangePicker">
+                                        <div class="form-group_icon form-group_icon__append">
+                                            <i class="fas fa-calendar-alt"></i>
+                                        </div>
+                                        <input class="form-control" value="07-10-2024" name="" type="text">
                                     </div>
                                 </div>
                                 <div class="col-lg col-md-3 col-6">
-                                    <div class="form-group">
-                                        <select name="" id="#" class="form-control">
-                                            <option value="">Trạng thái</option>
-                                            <option value="complete">Hoàn thành</option>
-                                            <option value="pending">Chờ xử lý</option>
-                                            <option value="canceled">Đã hủy</option>
-                                            <option value="none">Đang tạo</option>
-                                        </select>
+                                    <div class="form-group initDateRangePicker">
+                                        <div class="form-group_icon form-group_icon__append">
+                                            <i class="fas fa-calendar-alt"></i>
+                                        </div>
+                                        <input class="form-control" value="07-10-2024" name="" type="text">
                                     </div>
                                 </div>
-                                <div class="col-lg col-md-3 col-6">
+
+                                <div class="col-12 col-md">
                                     <div class="form-group">
-                                        <input type="date" name="" value="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg col-md-3 col-6">
-                                    <div class="form-group">
-                                        <input type="date" name="" value="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md flex-lg-grow-0">
-                                    <div class="d-flex align-items-center">
-                                        <button class="btn btn-primary waves-effect waves-light">
-                                            <span class="fal fa-search"></span>
-                                            Lọc
+                                        <button class="button-theme_1 button-theme_custom rounded-1 button-theme_primary"
+                                                type="submit">
+														<span>
+															<i class="fal fa-search"></i>
+															Lọc
+														</span>
                                         </button>
-                                        <button class="btn text-nowrap waves-effect waves-light btn-pdf ml-1">
-                                            <i class="fas fa-file-pdf"></i>
-                                            Xuất PDF
+                                        <button class="button-theme_1 button-theme_custom rounded-1 button-theme_success"
+                                                type="submit">
+														<span>
+															<i class="fas fa-file-excel"></i>
+														</span>
                                         </button>
-                                        <button class="btn text-nowrap waves-effect waves-light btn-excel ml-1">
-                                            <i class="fas fa-file-excel"></i>
-                                            Xuất Excel
-                                        </button>
+                                        <a href=""
+                                           class="button-theme_1 button-theme_custom rounded-1 button-theme_danger">
+														<span>
+															<i class="fas fa-trash-alt"></i>
+															Bỏ lọc
+														</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div id="table1" class="table-responsive">
                         <table class="section-tables">
