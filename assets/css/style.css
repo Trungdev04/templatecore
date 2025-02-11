@@ -10032,6 +10032,10 @@ Service Hot
     color: var(--bs-black);
 }
 
+/*.section-page .section-gap_large .card-button .button-theme {*/
+/*    background-color: #0a68ac;*/
+/*}*/
+
 .section-heading_2 .heading-description {
     font-size: 1em;
     letter-spacing: .3px;
@@ -10041,6 +10045,11 @@ Service Hot
 
 .section-gap_large {
     padding: 50px 0;
+}
+
+.section-gap_large .section-heading_3 .heading-title {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .box-item {
@@ -10159,7 +10168,7 @@ Service Hot
 
 .card-table_price .card-value .card-value_btn .limit {
     --line: 1;
-    font-size: 1em;
+    font-size: 0.86em;
 }
 
 .card-table_price .card-value .card-value_btn > span > span {
