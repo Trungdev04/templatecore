@@ -3207,7 +3207,7 @@ Style Code 1
 }
 
 .code-1 .code-item .code-item_icon img {
-    height: 50px;
+    height: 60px;
     -o-object-fit: contain;
     object-fit: contain;
 }
@@ -3247,8 +3247,8 @@ Style Game 1
 */
 
 .game-1 .game-item {
-    border-radius: 10px;
-    padding: 60px;
+    border-radius: 20px;
+    padding: 10px;
     display: flex;
     -webkit-transition: var(--transition-default, 0.3s all ease-in-out);
     -o-transition: var(--transition-default, 0.3s all ease-in-out);
@@ -3261,7 +3261,7 @@ Style Game 1
 }
 
 .game-1 .game-item .game-item_button {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -3270,18 +3270,24 @@ Style Game 1
     overflow: hidden;
 }
 
+.game-1 .game-item .game-item_icon img {
+    max-width: 50%;
+    border-radius: 8px;
+    height: auto;
+}
+
 .game-1 .game-item .game-item_title {
-    margin-top: 20px;
+    margin-top: 10px;
     display: block;
     line-height: 1.2;
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: 500;
     color: #101010;
     -webkit-transition: var(--transition-default, 0.3s all ease-in-out);
     -o-transition: var(--transition-default, 0.3s all ease-in-out);
     transition: var(--transition-default, 0.3s all ease-in-out);
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .game-1 .game-item:hover {
@@ -3790,9 +3796,10 @@ Style Form User 1
 }
 
 .user-form-1 .user-form_heading .user-form_heading__sub {
-    font-size: 1.45em;
-    font-weight: 600;
-    color: var(--bs-black, #000000)
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--bs-black, #000000);
+    text-transform: uppercase;
 }
 
 .user-form-1 .user-form_heading .user-form_heading__desc {
@@ -8684,6 +8691,13 @@ Service Hot
     margin-bottom: 20px;
 }
 
+.section-heading .heading-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--bs-dark);
+    text-transform: uppercase;
+}
+
 
 .login-wrapper .login-inner .section-heading .heading-title {
     font-size: 1.5em;
@@ -10031,10 +10045,6 @@ Service Hot
 .section-page .section-heading_2 .heading-title {
     color: var(--bs-black);
 }
-
-/*.section-page .section-gap_large .card-button .button-theme {*/
-/*    background-color: #0a68ac;*/
-/*}*/
 
 .section-heading_2 .heading-description {
     font-size: 1em;

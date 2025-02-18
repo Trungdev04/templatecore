@@ -376,337 +376,365 @@
 </header>
 
 <div id="main" class="main">
-    <div class="user-form-1" style="padding: 30px 0;">
+    <div class="section-gap">
         <div class="container">
-        <div class="user-form_wrapper">
-            <div class="user-form_item">
-                <div class="user-form_filter">
-                    <div class="user-form_filter__header">
-                        <div class="user-form_heading text-start text-left">
-                            <div class="user-form_heading__sub">
-                                LỊCH SỬ NẠP TOPUP
+            <div class="alert-custom alert alert-danger">
+                <p><samp>Lưu ý nạp quỹ bằng tài khoản ngân hàng của bạn. Nếu lợi dụng ATM của website để nhận tiền người
+                    khác, rửa tiền, lừa đảo sẽ khóa vĩnh viễn! Thời gian đợi thanh toán đối đa 15 phút. Hệ thống tự động
+                    cộng tiền 24/24. Vui lòng ghi đúng nội dung chuyển khoản.</samp></p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="description mb-3">
+                        <div class="section-heading">
+                            <div class="heading-title">
+                                Tạo yêu cầu nạp quỹ
                             </div>
                         </div>
                     </div>
-                    <div class="user-form_filter__body">
-                        <div class="row g-2">
-                            <div class="col-lg col-md-3 col-6">
-                                <input class="form-control" value="" name="" placeholder="Mã đơn">
-                            </div>
-                            <div class="col-lg col-md-3 col-6">
-                                <input class="form-control" value="" name=""
-                                       placeholder="Tài khoản nhận">
-                            </div>
-                            <div class="col-lg col-md-3 col-6">
-                                <select name="" class="form-select">
-                                    <option value="" selected="selected">Mã dịch vụ</option>
-                                    <option value="">Nạp Viettel trả sau</option>
-                                    <option value="">Nạp Viettel trả trước</option>
-                                    <option value="">Nạp Vinaphone trả trước</option>
-                                    <option value="">Nạp Vinaphone trả sau</option>
-                                    <option value="">Nạp Mobifone trả sau</option>
-                                    <option value="">Nạp Mobifone trả trước</option>
-                                    <option value="">Nạp Vietnamobile trả trước</option>
-                                    <option value="">Avatar 3</option>
-                                    <option value="">Avatar Musik</option>
-                                    <option value="">Ninja</option>
-                                </select>
-                            </div>
-                            <div class="col-lg col-md-3 col-6">
-                                <select name="" class="form-select">
-                                    <option value="" selected="selected">Trạng thái</option>
-                                    <option value="">Thành công</option>
-                                    <option value="">Chờ xử lý</option>
-                                    <option value="">Hủy bỏ</option>
-                                </select>
-                            </div>
-                            <div class="col-lg col-md-3 col-6">
-                                <div class="form-group initDateRangePicker">
-                                    <div class="form-group_icon form-group_icon__append">
-                                        <i class="fas fa-calendar-alt"></i>
+                    <form action="https://netpay.vn/wallet/deposit/post" method="POST">
+                        <input type="hidden" name="_token" value="xiArMv1d0NMwQPGKd640WN5He4Kyd0Q9eo0rYd5N">
+                        <div class="section-form section-form_card">
+                            <div class="section-form_inner p-0 border-0">
+                                <div class="section-form_wrapper">
+                                    <div class="section-form_item">
+                                        <div class="section-form_item__text">
+                                            Số dư quỹ
+                                        </div>
+                                        <div class="section-form_item__wrapper">
+                                            <b class="font-weight-bold text-success">99,999,999 VND</b>
+                                        </div>
                                     </div>
-                                    <input class="form-control" value="07-10-2024" name="" type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg col-md-3 col-6">
-                                <div class="form-group initDateRangePicker">
-                                    <div class="form-group_icon form-group_icon__append">
-                                        <i class="fas fa-calendar-alt"></i>
+                                    <div class="section-form_item">
+                                        <div class="section-form_item__text">
+                                            Số tiền nạp <span class="text-danger">*</span>
+                                        </div>
+                                        <div class="section-form_item__wrapper">
+                                            <input name="net_amount" type="text" class="form-control fnum"
+                                                   id="net_amount" placeholder="Số tiền nạp" value="">
+                                            <input name="wallet" type="hidden" value="0022738291">
+                                            <span class="text-danger text-small"> Tối thiểu 1,000 VND, Tối đa 200,000,000 VND </span>
+                                        </div>
                                     </div>
-                                    <input class="form-control" value="07-10-2024" name="" type="text">
-                                </div>
-                            </div>
+                                    <div class="section-form_item">
+                                        <div class="section-form_item__text">
+                                            Cổng thanh toán <span class="text-danger">*</span>
+                                        </div>
+                                        <div class="section-form_item__wrapper">
+                                            <select class="form-control form-select" name="paygate_code" required="">
+                                                <option value="Localbank_ACB">ATM NỘI ĐỊA (0%)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="section-form_item">
+                                        <div class="section-form_item__text"></div>
+                                        <div class="section-form_item__wrapper">
+                                            <button type="submit"
+                                                    class="button-theme_1 button-theme_primary button-theme_large rounded-2 w-100">
+                                                <i class="fas fa-dollar-sign"></i> Nạp tiền ngay
+                                            </button>
+                                        </div>
+                                    </div>
 
-                            <div class="col-12 col-md">
-                                <div class="form-group">
-                                    <button class="button-theme_1 button-theme_custom rounded-1 button-theme_primary"
-                                            type="submit">
-														<span>
-															<i class="fal fa-search"></i>
-															Lọc
-														</span>
-                                    </button>
-                                    <button class="button-theme_1 button-theme_custom rounded-1 button-theme_success"
-                                            type="submit">
-														<span>
-															<i class="fas fa-file-excel"></i>
-														</span>
-                                    </button>
-                                    <a href=""
-                                       class="button-theme_1 button-theme_custom rounded-1 button-theme_danger">
-														<span>
-															<i class="fas fa-trash-alt"></i>
-															Bỏ lọc
-														</span>
-                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-                <div class="table-1">
-                    <div class="table-responsive scrollbar scrollbar-x">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                            <tr>
-                                <th class="text-center">
-                                    Mã đơn
-                                </th>
-                                <th class="text-center">
-                                    Mã dịch vụ
-                                </th>
-                                <th class="text-center">
-                                    Tài khoản nhận
-                                </th>
-                                <th class="text-center">
-                                    Yêu cầu
-                                </th>
-                                <th class="text-center">
-                                    Đơn hàng
-                                </th>
-                                <th class="text-center">
-                                    Số tiền
-                                </th>
-                                <th class="text-center">
-                                    Ngày tạo
-                                </th>
-                                <th class="text-center">
-                                    Thao tác
-                                </th>
-                            </tr>
-                            </thead>
+
+                <div class="col-md-6 mt-4 mt-lg-0">
+                    <div class="description mb-1">
+                        <div class="section-heading">
+                            <div class="heading-title">
+                                Hạn mức và phí:
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-module">
                             <tbody>
                             <tr>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        <strong>R67A70C92E5897</strong>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        vietteltt
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        0986943798
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        20,000 đ
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <span class="badge badge-danger">Đã hủy</span>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        18,800 đ
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        2024-10-06 11:37:27
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <a href="#"
-                                       class="button-theme_1 button-theme_custom rounded-1 button-theme_primary">
-                                        Xem <i class="fal fa-eye"></i>
-                                    </a>
-                                </td>
+                                <td>Tổng hạn mức ngày</td>
+                                <th>100,000,000 VND</th>
                             </tr>
                             <tr>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        <strong>R67A70B6AD27E8</strong>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        vinatt
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        0951236047
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        200,000 đ
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <span class="badge badge-success">Hoàn thành</span>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        184,000
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        2024-10-06 11:37:27
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <a href="#"
-                                       class="button-theme_1 button-theme_custom rounded-1 button-theme_primary">
-                                        Xem <i class="fal fa-eye"></i>
-                                    </a>
-                                </td>
+                                <td>Số tiền tối thiểu</td>
+                                <th>1,000 VND</th>
                             </tr>
                             <tr>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        <strong>R67A70B137684E</strong>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        so
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        hz.998bi
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        500,000 đ
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <span class="badge badge-success">Hoàn thành</span>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        495,090 đ
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        2024-10-06 11:37:27
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <a href="#"
-                                       class="button-theme_1 button-theme_custom rounded-1 button-theme_primary">
-                                        Xem <i class="fal fa-eye"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        <strong>R67A5F6BE35D0B</strong>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        lmht
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        daiktop1
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        300,000
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <span class="badge badge-danger">Đã hủy</span>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        285,000 đ
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        2024-10-06 11:37:27
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <a href="#"
-                                       class="button-theme_1 button-theme_custom rounded-1 button-theme_primary">
-                                        Xem <i class="fal fa-eye"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        <strong>R67A5C2B77EB1A</strong>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        freefire
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        95190016
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        200,000
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <span class="badge badge-success">Hoàn thành</span>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        184,000
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="text-nowrap, text-center">
-                                        2024-10-06 11:37:27
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <a href="#"
-                                       class="button-theme_1 button-theme_custom rounded-1 button-theme_primary">
-                                        Xem <i class="fal fa-eye"></i>
-                                    </a>
-                                </td>
+                                <td>Số tiền tối đa</td>
+                                <th>200,000,000 VND</th>
                             </tr>
                             </tbody>
                         </table>
                     </div>
+                    <div class="mt-4">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-module">
+                                <tbody>
+                                <tr>
+                                    <th>Cổng thanh toán</th>
+                                    <th class="text-center">Phí cố định</th>
+                                    <th class="text-center">Phí %</th>
+                                </tr>
+                                <tr>
+                                    <td>ATM NỘI ĐỊA (0%)</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0
+                                        %
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="mt-4">
+                <div class="section-heading">
+                    <div class="heading-title">
+                        Lịch sử nạp tiền
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-module">
+                        <thead>
+                        <tr>
+                            <th class="text-center">Mã đơn</th>
+                            <th class="text-center">Nạp vào quỹ</th>
+                            <th class="text-center">Số tiền</th>
+                            <th class="text-center">Cổng thanh toán</th>
+                            <th class="text-center">Ngày tạo</th>
+                            <th class="text-center">Trạng thái</th>
+                            <th class="text-center">Thao tác</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D678C04C19DEF9</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +50,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">19-01-2025 02:45</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D678BCB429E7FD</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +40,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">18-01-2025 22:39</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D678BCB0BD7ECC</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +41,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">18-01-2025 22:38</td>
+                            <td class="text-center">
+                                <span class="badge badge-danger">Đã hủy</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D678B2CEF14F5B</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +30,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">18-01-2025 11:24</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D678A40E49FF79</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +180,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">17-01-2025 18:37</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D6789DC62E978A</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +150,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">17-01-2025 11:28</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D6789554819458</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +80,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">17-01-2025 01:51</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D67892206D8DC3</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +300,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">16-01-2025 22:13</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D6787F2BCDFEC1</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +200,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">16-01-2025 00:39</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>D6787D36CCF43D</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">VND</td>
+                            <td class="text-center">
+                                +50,000đ
+                            </td>
+                            <td class="text-center">ATM NỘI ĐỊA (0%)</td>
+                            <td class="text-center">15-01-2025 22:25</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">
+                                <a href="#"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
