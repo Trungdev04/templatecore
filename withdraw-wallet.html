@@ -411,347 +411,316 @@
 </header>
 
 <div id="main" class="main">
-    <div class="topup-body">
+    <div class="section-gap">
         <div class="container">
-            <div class="section-heading">
-                <div class="heading-title">
-<!--                    <img src="./assets/images/mua-the/the-viettel.png" class="mw-100" alt="">-->
-                    NẠP TIỀN ĐIỆN THOẠI
-                </div>
-                <div class="section-breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">Trang chủ</a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            Nạp tiền điện thoại
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="alert-custom alert alert-info">
-                <p>Nạp topup chậm sẽ phải đợi từ 2-30 phút để nhận chiết khấu ưu đãi. Nếu quá thời gian bạn có thể sửa đơn sang nạp ngay để nhận được tiền topup luôn. Nếu đơn nạp lỗi sẽ được hoàn tiền 100%. Đăng ký tài khoản để nhận thêm ưu đãi khác.</p>
-
-                <p><strong>- Kiểm tra lịch sử nạp&nbsp;<a href="history-topup.html">TẠI ĐÂY</a></strong></p>
-            </div>
-            <div class="row g-3">
-                <div class="col-xl-4">
-                    <div class="section-form section-form_card">
-                        <div class="section-form_inner p-3 border-0">
-                            <div class="section-form_wrapper">
-                                <div class="section-form_item">
-                                    <div class="section-form_item__text">
-                                        Sản phẩm <span class="text-danger">*</span>
-                                    </div>
-                                    <div class="section-form_item__wrapper">
-                                        <select name="" id="" class="form-select">
-                                            <option value="">Sản phẩm</option>
-                                            <option value="viettel2ts" selected="">
-                                                Nạp Viettel trả trước, trả sau
-                                            </option>
-                                            <option value="vina2ts">
-                                                Nạp Vinaphone trả trước, trả sau
-                                            </option>
-                                            <option value="myvt">
-                                                Nạp Viettel có OTP (My Viettel)
-                                            </option>
-                                            <option value="myvn">
-                                                Nạp Vina có OTP (My Vina)
-                                            </option>
-                                            <option value="mymb">
-                                                Nạp Mobi có OTP (My Mobi)
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="section-form_item">
-                                    <div class="section-form_item__text">
-                                        Số điện thoại <span class="text-danger">*</span>
-                                    </div>
-                                    <div class="section-form_item__wrapper">
-                                        <input type="text" class="form-control" placeholder="Nhập số điện thoại">
-                                    </div>
-                                </div>
-                                <div class="section-form_item">
-                                    <div class="section-form_item__text">
-                                        Số tiền nạp <span class="text-danger">*</span>
-                                    </div>
-                                    <div class="section-form_item__wrapper">
-                                        <select name="" id="" class="form-select">
-                                            <option value="">--- Số tiền nạp---</option>
-                                            <option value="33" discount="9" price="20000">20,000 đ</option>
-                                            <option value="35" discount="9" price="50000">50,000 đ</option>
-                                            <option value="36" discount="9" price="100000">100,000 đ</option>
-                                            <option value="37" discount="9" price="200000">200,000 đ</option>
-                                        </select>
-                                        <small class="text-danger">Số tiền tối thiểu : 50,000</small>
-                                        <small class="text-danger">| Số tiền tối đa : 5,000,000</small>
-                                        <small class="text-danger">| Bội : 10,000</small>
-                                    </div>
-                                </div>
-                                <div class="section-form_item">
-                                    <div class="section-form_item__text">
-                                        Hình thức nạp
-                                    </div>
-                                    <div class="section-form_item__wrapper">
-                                        <select name="" id="" class="form-select">
-                                            <option value="#" selected="">
-                                                Nạp chậm (6.5%)
-                                            </option>
-                                            <option value="#">
-                                                Nạp nhanh (2%)
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="section-form_item">
-                                    <div class="section-form_item__text">
-                                        Cổng thanh toán <span class="text-danger">*</span>
-                                    </div>
-                                    <div class="section-form_item__wrapper">
-                                        <select name="" class="form-select" id="">
-                                            <option value="">
-                                                Quỹ VND
-                                            </option>
-                                            <option value="">
-                                                ATM Nội Địa (0%)
-                                            </option>
-                                            <option value="">
-                                                OnePay (1% + 1700đ)
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="section-form_item">
-                                    <div class="section-form_item__wrapper">
-                                        <button type="submit"
-                                                class="button-theme_1 button-theme_primary button-theme_large rounded-2 w-100">
-                                            <i class="fas fa-upload"></i> THANH TOÁN
-                                        </button>
-                                    </div>
-                                </div>
+            <!--            <div class="alert-custom alert alert-danger">-->
+            <!--                <p><samp>Lưu ý nạp quỹ bằng tài khoản ngân hàng của bạn. Nếu lợi dụng ATM của website để nhận tiền người-->
+            <!--                    khác, rửa tiền, lừa đảo sẽ khóa vĩnh viễn! Thời gian đợi thanh toán đối đa 15 phút. Hệ thống tự động-->
+            <!--                    cộng tiền 24/24. Vui lòng ghi đúng nội dung chuyển khoản.</samp></p>-->
+            <!--            </div>-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="description mb-3">
+                        <div class="section-heading">
+                            <div class="heading-title">
+                                Rút tiền
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="section-form section-form_card">
-                        <div class="section-form_inner p-3 border-0">
-                            <div class="section-form_wrapper">
-                                <div class="table-responsive section-table">
-                                    <table class="table table-bordered table-striped table-hover mb-0 align-middle">
-                                        <thead>
-                                        <tr>
-                                            <th>
-                                                Nạp Viettel trả trước, trả sau
-                                            </th>
-                                            <th class="text-center">
-                                                Chiết khấu
-                                            </th>
-                                            <th class="text-center">
-                                                Sản phẩm
-                                            </th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                20,000 đ
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    8%
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    <span class="text-decoration-line-through text-danger">20,000</span>
-                                                    <strong>18,400đ</strong>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                50,000 đ
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    8%
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    <span class="text-decoration-line-through text-danger">50,000</span>
-                                                    <strong>46,000đ</strong>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                100,000 đ
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    8%
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    <span class="text-decoration-line-through text-danger">100,000</span>
-                                                    <strong>92,000đ</strong>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                200,000 đ
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    8%
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    <span class="text-decoration-line-through text-danger">200,000</span>
-                                                    <strong>184,000đ</strong>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                300,000 đ
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    8%
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    <span class="text-decoration-line-through text-danger">300,000</span>
-                                                    <strong>276,000đ</strong>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                500,000 đ
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    8%
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-center">
-                                                    <span class="text-decoration-line-through text-danger">500,000</span>
-                                                    <strong>460,000đ</strong>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="section-description border p-3">
-                                    <p>Nạp Viettel trả trước có được hưởng KM từ nhà mạng</p>
+                    <form action="https://netpay.vn/wallet/deposit/post" method="POST">
+                        <input type="hidden" name="_token" value="xiArMv1d0NMwQPGKd640WN5He4Kyd0Q9eo0rYd5N">
+                        <div class="section-form section-form_card">
+                            <div class="section-form_inner p-0 border-0">
+                                <div class="section-form_wrapper">
+                                    <div class="section-form_item">
+                                        <div class="section-form_item__text">
+                                            Số dư quỹ
+                                        </div>
+                                        <div class="section-form_item__wrapper">
+                                            <b class="font-weight-bold text-success">99,999,999 VND</b>
+                                        </div>
+                                    </div>
+                                    <div class="section-form_item">
+                                        <div class="section-form_item__text">
+                                            Số tiền rút <span class="text-danger">*</span>
+                                        </div>
+                                        <div class="section-form_item__wrapper">
+                                            <input name="net_amount" type="text" class="form-control fnum"
+                                                   id="net_amount" placeholder="Số tiền rút" value="">
+                                            <input name="wallet" type="hidden" value="0022738291">
+                                            <span class="text-danger text-small"> Tối thiểu 10,000 VND, Tối đa 100,000,000 VND </span>
+                                        </div>
+                                    </div>
+                                    <div class="section-form_item">
+                                        <div class="section-form_item__text">
+                                            Cổng thanh toán <span class="text-danger">*</span>
+                                            <br>
+                                            [<a href="#" class="text-danger font-weight-bold">Thêm ngân hàng</a>]
+                                        </div>
+                                        <div class="section-form_item__wrapper">
+                                            <select class="form-control form-select" name="paygate_code" required="">
+                                                <option value="Localbank_VTB">NGAN HANG TMCP CONG THUONG VIET NAM (VIETINBANK) / STK: 105874819485, CTK: Nguyễn Văn A</option>
+                                                <option value="Localbank_BIDV">NGAN HANG TMCP DAU TU VA PHAT TRIEN VIET NAM (BIDV) / STK: 105874948581, CTK: Nguyễn Văn B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="section-form_item">
+                                        <div class="section-form_item__text"></div>
+                                        <div class="section-form_item__wrapper">
+                                            <button type="submit"
+                                                    class="button-theme_1 button-theme_primary button-theme_large rounded-2 w-100">
+                                                <i class="fas fa-dollar-sign"></i> Rút tiền ngay
+                                            </button>
+                                        </div>
+                                    </div>
 
-                                    <p><span style="color:#e74c3c">- Tỷ lệ % mệnh giá: </span><span
-                                            style="color:#9b59b6">20k
-                                        99%</span>,
-                                        <span style="color:#2980b9">50k 96%</span>, <span style="color:#d35400">100k
-                                            92%</span>,<span
-                                                style="color:#f39c12"> </span><span style="color:#1abc9c">200k
-                                            40%</span>
-                                    </p>
-
-                                    <p>- Sau 5p không thành công sẽ tự động hủy đơn. Lý do hủy đơn do quá tải&nbsp;hoặc
-                                        sdt
-                                        không đủ điều kiện, Quý Khách có thể úp lại theo mệnh giá khác, loại khác&nbsp;hoặc
-                                        thời
-                                        điểm khác.
-                                    </p>
-
-                                    <p><span style="color:#e74c3c">- SĐT viết liền không cách, 1 số điện thoại muốn nạp
-                                        nhiều
-                                        lần vui lòng chờ lần nạp trước có </span><span
-                                            style="color:#000000"><strong>kết quả</strong></span><span
-                                            style="color:#e74c3c">
-                                        mới úp tiếp</span></p>
-
-                                    <p><span style="color:#000000">-</span><span style="color:#e74c3c">&nbsp;</span>Tuyển
-                                        đại
-                                        lý
-                                        nạp
-                                        cước,
-                                        nạp
-                                        tiền
-                                        điện
-                                        thoại
-                                        chi
-                                        tiết&nbsp;<a
-                                                href="https://thesieure.com/news/huong-dan-dang-ky-tai-khoan-dai-ly-cap-1-nap-cuoc.html">tại
-                                            đây</a>
-                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-                <div class="col-lg-3 col-xl-2">
-                    <div class="section-sidebar sidebar-recharge">
-                        <div class="sidebar-item">
-                            <div class="sidebar-header p-3 pb-2">
-                                <div class="sidebar-title">
-                                    Sản phẩm khác
-                                </div>
+
+                <div class="col-md-6 mt-4 mt-lg-0">
+                    <div class="description mb-1">
+                        <div class="section-heading">
+                            <div class="heading-title">
+                                Hạn mức và phí:
                             </div>
-                            <div class="sidebar-body px-3">
-                                <div class="sidebar-list">
-                                    <ul class="list-unstyled mb-0 nav nav-tabs border-bottom-0" id="sidebar-category">
-                                        <li>
-                                            <a href='#'
-                                               class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0 active">
-                                                <div class="card-title">
-                                                    Nạp tiền game
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                               class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
-                                                <div class="card-title text-center">
-                                                    Nạp Carot Teamobi
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                               class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
-                                                <div class="card-title text-center">
-                                                    Nạp game nước ngoài
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                               class="topup-card card border-0 rounded-0 bg-transparent transition-default p-0">
-                                                <div class="card-title text-center">
-                                                    Mua Data Viettel
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-module">
+                            <tbody>
+                            <tr>
+                                <td>Tổng hạn mức ngày</td>
+                                <th>500,000,000 VND</th>
+                            </tr>
+                            <tr>
+                                <td>Số tiền tối thiểu</td>
+                                <th>10,000 VND</th>
+                            </tr>
+                            <tr>
+                                <td>Số tiền tối đa</td>
+                                <th>200,000,000 VND</th>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-4">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-module">
+                                <tbody>
+                                <tr>
+                                    <th>Cổng thanh toán</th>
+                                    <th class="text-center">Phí cố định</th>
+                                    <th class="text-center">Phí %</th>
+                                    <th class="text-center">Mức rút không phí</th>
+                                </tr>
+                                <tr>
+                                    <td>NGAN HANG TMCP NGOAI THUONG VIET NAM (VIETCOMBANK)</td>
+                                    <td class="text-center">1,500đ</td>
+                                    <td class="text-center">0 %</td>
+                                    <td class="text-center">1,000,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>NGAN HANG TMCP DAU TU VA PHAT TRIEN VIET NAM (BIDV)</td>
+                                    <td class="text-center">1,500đ</td>
+                                    <td class="text-center">0 %</td>
+                                    <td class="text-center">1,000,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>NGAN HANG TMCP CONG THUONG VIET NAM (VIETINBANK)</td>
+                                    <td class="text-center">1,500đ</td>
+                                    <td class="text-center">0 %</td>
+                                    <td class="text-center">1,000,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>NGAN HANG TMCP SAI GON THUONG TIN (SACOMBANK)</td>
+                                    <td class="text-center">1,500đ</td>
+                                    <td class="text-center">0 %</td>
+                                    <td class="text-center">1,000,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>NGAN HANG TMCP QUOC TE (VIB)</td>
+                                    <td class="text-center">1,500đ</td>
+                                    <td class="text-center">0 %</td>
+                                    <td class="text-center">1,000,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>ATM NỘI ĐỊA (0%)</td>
+                                    <td class="text-center">1,500đ</td>
+                                    <td class="text-center">0 %</td>
+                                    <td class="text-center">1,000,000đ</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="mt-4">
+                <div class="section-heading">
+                    <div class="heading-title">
+                        Lịch sử rút tiền
+                    </div>
+                </div>
+                <div class="user-form_filter">
+                    <div class="row g-2">
+                        <div class="col-lg col-md-3 col-6">
+                            <input class="form-control" value="" name="" placeholder="Mã đơn">
+                        </div>
+                        <div class="col-lg col-md-3 col-6">
+                            <select name="" class="form-select">
+                                <option value="" selected="selected">Ngân hàng</option>
+                                <option value="">NGAN HANG TMCP NGOAI THUONG VIET NAM (VIETCOMBANK)</option>
+                                <option value="">NGAN HANG TMCP DAU TU VA PHAT TRIEN VIET NAM (BIDV)</option>
+                                <option value="">NGAN HANG TMCP CONG THUONG VIET NAM (VIETINBANK)</option>
+                                <option value="">NGAN HANG TMCP SAI GON THUONG TIN (SACOMBANK)</option>
+                                <option value="">NGAN HANG TMCP QUOC TE (VIB)</option>
+                            </select>
+                        </div>
+                        <div class="col-lg col-md-3 col-6">
+                            <select name="" class="form-select">
+                                <option value="" selected="selected">Trạng thái</option>
+                                <option value="">Thành công</option>
+                                <option value="">Chờ xử lý</option>
+                                <option value="">Hủy bỏ</option>
+                            </select>
+                        </div>
+                        <div class="col-lg col-md-3 col-6">
+                            <div class="form-group initDateRangePicker">
+                                <div class="form-group_icon form-group_icon__append">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <input class="form-control" value="07-10-2024" name="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-lg col-md-3 col-6">
+                            <div class="form-group initDateRangePicker">
+                                <div class="form-group_icon form-group_icon__append">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <input class="form-control" value="07-10-2024" name="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md">
+                            <div class="form-group">
+                                <button class="button-theme_1 button-theme_custom rounded-1 button-theme_primary"
+                                        type="submit">
+														<span>
+															<i class="fal fa-search"></i>
+															Lọc
+														</span>
+                                </button>
+                                <button class="button-theme_1 button-theme_custom rounded-1 button-theme_success"
+                                        type="submit">
+														<span>
+															<i class="fas fa-file-excel"></i>
+														</span>
+                                </button>
+                                <a href=""
+                                   class="button-theme_1 button-theme_custom rounded-1 button-theme_danger">
+														<span>
+															<i class="fas fa-trash-alt"></i>
+															Bỏ lọc
+														</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-module">
+                        <thead>
+                        <tr>
+                            <th class="text-center">Mã đơn</th>
+                            <th class="text-center">Số tiền</th>
+                            <th class="text-center">Ngân hàng</th>
+                            <th class="text-center">Tên tài khoản</th>
+                            <th class="text-center">Số tài khoản</th>
+                            <th class="text-center">Trạng thái</th>
+                            <th class="text-center">Ngày tạo</th>
+                            <th class="text-center">Thao tác</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>W67A1595AC8787</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">-38,000,000đ</td>
+                            <td class="text-center">
+                                NGAN HANG TMCP CONG THUONG VIET NAM (VIETINBANK)
+                            </td>
+                            <td class="text-center">Nguyễn Văn A</td>
+                            <td class="text-center">105874819485</td>
+                            <td class="text-center">
+                                <span class="badge badge-warning">Chờ xử lý</span>
+                            </td>
+                            <td class="text-center">19-02-2025 02:45</td>
+                            <td class="text-center">
+                                <a href="chi-tiet-don-rut.html"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>W677A250DC6154</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">-65,000,000đ</td>
+                            <td class="text-center">
+                                NGAN HANG TMCP DAU TU VA PHAT TRIEN VIET NAM (BIDV)
+                            </td>
+                            <td class="text-center">Nguyễn Văn B</td>
+                            <td class="text-center">105874819485</td>
+                            <td class="text-center">
+                                <span class="badge badge-success">Hoàn thành</span>
+                            </td>
+                            <td class="text-center">05-01-2025 13:22</td>
+                            <td class="text-center">
+                                <a href="chi-tiet-don-rut.html"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="text-nowrap, text-center">
+                                    <strong>W677A2067422DE</strong>
+                                </div>
+                            </td>
+                            <td class="text-center">-66,000,000đ</td>
+                            <td class="text-center">
+                                NGAN HANG TMCP SAI GON THUONG TIN (SACOMBANK)
+                            </td>
+                            <td class="text-center">Nguyễn Văn C</td>
+                            <td class="text-center">105874948581</td>
+                            <td class="text-center">
+                                <span class="badge badge-danger">Đã hủy</span>
+                            </td>
+                            <td class="text-center">05-01-2025 13:02</td>
+                            <td class="text-center">
+                                <a href="chi-tiet-don-rut.html"
+                                   class="my-1 my-lg-0 btn btn-sm btn-outline-primary">
+                                    Xem <i class="fal fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
-
 <footer class="footer-1">
     <div class="footer-top">
         <div class="container">

@@ -8692,10 +8692,9 @@ Service Hot
 }
 
 .section-heading .heading-title {
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 1.7em;
+    font-weight: 500;
     color: var(--bs-dark);
-    /*text-transform: uppercase;*/
 }
 
 
@@ -9882,7 +9881,7 @@ Service Hot
 }
 
 .badge-module {
-    background-color: #13CADA;
+    background-color: #0dcaf0;
     color: white;
     padding: 5px 10px;
     border-radius: 3px;
@@ -9895,8 +9894,14 @@ Service Hot
     border-radius: 3px;
 }
 
-/*Topup SMS*/
+.badge-warning {
+    background-color: #ffc107;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
 
+/*Topup SMS*/
 @media screen and (max-width: 768px) {
     .topup-body .section-heading {
         flex-direction: column;
