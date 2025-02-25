@@ -3267,18 +3267,47 @@ Style Code 1
 Style Game 1
 */
 
+/*.game-1 .game-item {*/
+/*    border-radius: 20px;*/
+/*    padding: 10px;*/
+/*    display: flex;*/
+/*    -webkit-transition: var(--transition-default, 0.3s all ease-in-out);*/
+/*    -o-transition: var(--transition-default, 0.3s all ease-in-out);*/
+/*    transition: var(--transition-default, 0.3s all ease-in-out);*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    height: 100%;*/
+/*}*/
+
 .game-1 .game-item {
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 10px;
-    display: flex;
-    -webkit-transition: var(--transition-default, 0.3s all ease-in-out);
+    -webkit-box-shadow: 0 6px 34px rgba(215, 216, 222, 0.41);
+    box-shadow: 0 6px 34px rgba(215, 216, 222, 0.41);
+    -webkit-transition: var(--transition-default, 0.3s allease-in-out);
     -o-transition: var(--transition-default, 0.3s all ease-in-out);
-    transition: var(--transition-default, 0.3s all ease-in-out);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    transition: var(--transition-default, 0.3s allease-in-out);
+    width: 100%;
+    position: relative;
     text-align: center;
     height: 100%;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid #f8f9fa;
 }
 
 .game-1 .game-item .game-item_button {
@@ -3293,7 +3322,7 @@ Style Game 1
 
 .game-1 .game-item .game-item_icon img {
     max-width: 50%;
-    border-radius: 8px;
+    border-radius: 5px;
     height: auto;
 }
 
