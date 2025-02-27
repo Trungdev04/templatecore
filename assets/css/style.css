@@ -3321,7 +3321,7 @@ Style Game 1
 }
 
 .game-1 .game-item .game-item_icon img {
-    max-width: 50%;
+    max-width: 40%;
     border-radius: 5px;
     height: auto;
 }
@@ -9996,8 +9996,6 @@ Service Hot
 .section-table thead th,
 .section-table tbody td {
     padding: 5px 5px;
-    color: var(--bs-gray-900);
-    -webkit-transition: var(--transition-default);
     -o-transition: var(--transition-default);
     transition: var(--transition-default);
     font-size: 1.075em;
@@ -10489,6 +10487,12 @@ Service Hot
 .section-gap-1 {
     padding: 30px 0;
 }
+
+.table-responsive .table thead {
+    background-color: #0a68ac;
+    color: white;
+}
+
 .tabs-m1 .nav-tabs {
     border-bottom: 0;
     padding-bottom: 5px;
